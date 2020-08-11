@@ -26,6 +26,8 @@ CREATE TABLE employee (
     PRIMARY KEY (id)
 );
 
+
+-- code section I can use in the server.js 
 INSERT INTO roles (department_id) SELECT id FROM department;
 INSERT INTO employee (role_id) SELECT id FROM roles;
 INSERT INTO employee (manager_id) SELECT id FROM department;
